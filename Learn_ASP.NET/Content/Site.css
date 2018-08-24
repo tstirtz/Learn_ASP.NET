@@ -1,4 +1,9 @@
-﻿.navbar{
+﻿body{
+    background-image: url("simple-coffee-image.jpg");
+    background-size: cover;
+}
+
+.navbar{
     justify-content: flex-start;
 }
 
@@ -8,4 +13,15 @@
 
 .nav-link {
     margin-right: 1rem;
+}
+
+.jumbotron {
+    margin-top: 10%;
+    background-color: #e9ecef8c;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.table {
+    background-color: #00000012;
 }

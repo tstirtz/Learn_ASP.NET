@@ -85,6 +85,8 @@
     <Content Include="packages.config" />
     <Content Include="Content\Site.css" />
     <Content Include="Views\Books\Index.cshtml" />
+    <Content Include="Content\simple-coffee-image.jpg" />
+    <Content Include="Content\coffee-image-dark.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

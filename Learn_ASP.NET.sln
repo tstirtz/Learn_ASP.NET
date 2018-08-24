@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learn_ASP.NET", "Learn_ASP.NET\Learn_ASP.NET.csproj", "{1B6C84CD-3B2E-475B-9E49-1006DC70E58F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learn_ASP.NET.Tests", "Learn_ASP.NET.Tests\Learn_ASP.NET.Tests.csproj", "{1708791C-D34B-4D46-B4DE-E83B6180E557}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B6C84CD-3B2E-475B-9E49-1006DC70E58F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B6C84CD-3B2E-475B-9E49-1006DC70E58F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B6C84CD-3B2E-475B-9E49-1006DC70E58F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B6C84CD-3B2E-475B-9E49-1006DC70E58F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1708791C-D34B-4D46-B4DE-E83B6180E557}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1708791C-D34B-4D46-B4DE-E83B6180E557}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1708791C-D34B-4D46-B4DE-E83B6180E557}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1708791C-D34B-4D46-B4DE-E83B6180E557}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

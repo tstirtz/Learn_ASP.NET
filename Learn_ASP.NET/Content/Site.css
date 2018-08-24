@@ -1,0 +1,11 @@
+﻿.navbar{
+    justify-content: flex-start;
+}
+
+.navbar-nav{
+    flex-direction: row;
+}
+
+.nav-link {
+    margin-right: 1rem;
+}

@@ -73,6 +73,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BooksController.cs" />
     <Compile Include="Models\Book.cs" />
+    <Compile Include="Controllers\FavoritesController.cs" />
+    <Compile Include="Models\Favorite.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
@@ -87,6 +89,7 @@
     <Content Include="Views\Books\Index.cshtml" />
     <Content Include="Content\simple-coffee-image.jpg" />
     <Content Include="Content\coffee-image-dark.jpg" />
+    <Content Include="Views\Favorites\Index.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

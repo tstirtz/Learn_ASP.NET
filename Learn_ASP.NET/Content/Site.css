@@ -6,6 +6,10 @@
     background-repeat: no-repeat;
 }
 
+.body-favorites{
+    background-image: none;
+}
+
 .navbar{
     justify-content: space-between;
 }
@@ -44,17 +48,18 @@
     text-transform: uppercase;
 }
 
-.table{
-    background-color: #00000012;
+.table {
+    background-color: #cececec2;
 }
 
-.cards-container{
+.cards-container {
     display: grid;
     width: 70%;
     margin-left: 15%;
     grid-template-columns: 50% 50%;
     grid-template-rows: 33.33% 33.33% 33.33%;
     justify-items: center;
+    background-color: #f3f3f3;
 }
 
 .card-img-top{
@@ -63,7 +68,8 @@
 }
 
 .card{
-    margin-bottom: 50px;
+    width: 250px;
+    margin: 0px 25px 50px 25px ;
 }
 
 .card-body{

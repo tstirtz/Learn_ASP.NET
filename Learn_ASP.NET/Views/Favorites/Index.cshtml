@@ -4,7 +4,25 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Tyler By The Numbers</h2>
+<h2 class="view-header">Tyler By The Numbers</h2>
+
+<div class="cards-container">
+    @foreach (var item in Model)
+    {
+        <div class="card shadow" style="width: 250px;">
+            <img class="card-img-top" src="../@Html.DisplayFor(i => item.Source)" alt="Card image cap">
+            <div class="card-body text-center">
+                <h5 class="card-title text-secondary text-uppercase">
+                    @Html.DisplayFor(i => item.Name)
+                </h5>
+                <span class="card-percent">@Html.DisplayFor(i => item.Percent)%</span>
+                <p class="card-text text-secondary">
+                    @Html.DisplayFor(i => item.Description)
+                </p>
+            </div>
+        </div>
+    }
+</div>
 
 
 

@@ -100,6 +100,12 @@ namespace Learn_ASP.NET.Controllers
                 Title = "Blink",
                 Author = "Malcolm Gladwell",
                 Rating = 8
+            },
+            new Book{
+                Id = 6,
+                Title = "Ready Player One",
+                Author = "Ernest Cline",
+                Rating = 8
             }
         };
     }

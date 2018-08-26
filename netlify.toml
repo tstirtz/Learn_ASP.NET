@@ -1,7 +1,7 @@
 [build]
   # This is the directory to change to before starting a build.
-  base    = "Learn_ASP.NET/"
-  publish = "Learn_ASP.NET/Learn_ASP.NET"
+  base    = "Learn_ASP.NET/Learn_ASP.NET/"
+  publish = "Learn_ASP.NET/Learn_ASP.NET/"
 
 [context.production]
-  publish = "Learn_ASP.NET/Learn_ASP.NET"
+  publish = "Learn_ASP.NET/Learn_ASP.NET/"

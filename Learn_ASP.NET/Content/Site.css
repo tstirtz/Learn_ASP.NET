@@ -18,15 +18,20 @@
     flex-direction: row;
 }
 
-.nav-link{
+.navbar-dark .navbar-nav .nav-link {
     margin-right: 1rem;
+    color: #CBCCCD;
 }
 
-.jumbotron{
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: white;
+}
+
+.jumbotron {
     margin-top: 10%;
-    background-color: #e9ecefc7;
+    background-color: #a6b2bfd1;
     /*width: 80%;
-    margin-left: 10%;*/r
+    margin-left: 10%;*/ r
 }
 
 .jumbotron-p{
@@ -49,7 +54,7 @@
 }
 
 .table {
-    background-color: #cececec2;
+    background-color: #cececee8;
 }
 
 .cards-container {

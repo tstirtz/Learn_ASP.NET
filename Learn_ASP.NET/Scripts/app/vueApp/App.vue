@@ -1,6 +1,6 @@
 ﻿<template>
     <div class="container d-flex flex-column justify-content-start">
-        <h2 class="display-4 text center view-header">Expense Tracker</h2>
+        <h1 class="display-4 text center view-header">Expense Tracker</h1>
         <Modal v-bind:modalContent="modal.content" v-bind:modalTitle="modal.title"></Modal>
         <div class="row align-items-center">
             <form id="expense-form" @submit.prevent="handleSubmit(inputs.expenseName, inputs.expenseAmount)" class="input-group">

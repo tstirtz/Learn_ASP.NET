@@ -1,6 +1,9 @@
 ﻿body{
+    width: 100vw;
+    height: 100vh;
     background-image: url("simple-coffee-image.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .navbar{
@@ -17,9 +20,9 @@
 
 .jumbotron {
     margin-top: 10%;
-    background-color: #e9ecef8c;
-    width: 80%;
-    margin-left: 10%;
+    background-color: #e9ecefc7;
+    /*width: 80%;
+    margin-left: 10%;*/r
 }
 
 .jumbotron-p{
@@ -86,6 +89,18 @@
 .card-text {
     margin-top: 10px;
 }
+
+.input-group{
+    margin-top: 20px;
+}
+.form-control {
+    background-color: #ffffffeb;
+}
+
+.total {
+    background-color: #17a2b8e0;
+}
+
 
 
 

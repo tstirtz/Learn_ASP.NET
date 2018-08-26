@@ -1,0 +1,130 @@
+﻿body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("simple-coffee-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.body-favorites{
+    background-image: none;
+}
+
+.navbar{
+    justify-content: space-between;
+}
+
+.navbar-nav{
+    flex-direction: row;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    margin-right: 1rem;
+    color: #CBCCCD;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: white;
+}
+
+.jumbotron {
+    margin-top: 10%;
+    background-color: #a6b2bfd1;
+    /*width: 80%;
+    margin-left: 10%;*/ r
+}
+
+.jumbotron-p{
+    display: inline-block;
+}
+
+.fa-coffee{
+    color: #343a40;
+}
+
+.view-header{
+    text-align: center;
+    margin-top: 65px;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.875rem;
+    font-weight: 900;
+    color: #5b5d5f;
+    text-transform: uppercase;
+}
+
+.table {
+    background-color: #cececee8;
+}
+
+.cards-container {
+    display: grid;
+    width: 70%;
+    margin-left: 15%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    justify-items: center;
+    background-color: #f3f3f3;
+}
+
+.card-img-top{
+    height: 250px;
+    padding: 25px;
+}
+
+.card{
+    width: 250px;
+    margin: 0px 25px 50px 25px ;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-title{
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    font-weight: 900;
+}
+
+.card-percent{
+    color: #0087aa;
+    font-size: 3.125rem;
+    font-weight: 900;
+    line-height: 40px
+}
+
+.card-text{
+    margin-top: 10px;
+}
+
+.input-group{
+    margin-bottom: 50px;
+}
+.form-control{
+    background-color: #ffffffeb;
+}
+
+.table-container{
+    display: block;
+    width: 100%;
+    max-height: 40vh;
+    overflow-y: auto;
+    margin-bottom: 15px;
+}
+
+.total{
+    background-color: #17a2b8e0;
+}
+
+.vue-app-header{
+    margin: 40px 0px 60px 0px;
+    text-align: center;
+}
+
+
+
+

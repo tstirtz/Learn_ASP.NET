@@ -109,7 +109,7 @@ namespace Learn_ASP.NET.Controllers
                 Id = 6,
                 Name = "ASP.NET MVC vs. Web Forms",
                 Percent = 50,
-                Description = "I am really enjoying working with ASP.NET MVC",
+                Description = "I am really enjoying working with ASP.NET MVC and I'm excited to begin digging into Web Forms!",
                 Source = "Content/microsoft.png"
             }
         };

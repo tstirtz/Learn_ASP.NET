@@ -4,4 +4,4 @@
   publish = "Learn_ASP.NET/"
 
 [context.production]
-  publish = "Learn_ASP.NET/Views/Home/Index.cshtml"
+  publish = "Learn_ASP.NET/Views/Home/"

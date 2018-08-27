@@ -9,7 +9,7 @@
     "bootstrap": "^3.3.7",
     "sweet-modal-vue": "^1.2.0",
     "vue": "^2.1.6",
-    "webpack": "4.8.2"
+    "webpack": "^3.12.0"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",

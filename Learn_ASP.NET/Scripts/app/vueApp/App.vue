@@ -17,7 +17,7 @@
                     <button for="expense-form" class="btn btn-outline-secondary" type="submit">Submit</button>
                 </div>
             </form>
-            <Table v-bind:expenses="expenses"></Table>
+            <Table v-bind:expenses="expenses" v-bind:total="total"></Table>
             <button v-on:click="clearTable" class="btn btn-outline-dark">Clear Table</button>
             <router-link to="summary">Expense Summary</router-link>
         </div>
@@ -63,6 +63,21 @@ import Modal from "./components/Modal.vue";
       clearTable(){
         this.expenses = [];
       }
+    },
+    computed: {
+        total: function (){
+        let total = 0;
+
+        this.expenses.forEach((currentItem, index) => {
+            let cents = currentItem.amount * 100;
+            total += cents;
+        });
+
+        let totalDollars = total / 100;
+        let totalWithCents = totalDollars.toFixed(2);
+
+        return totalWithCents;
+      },
     }
   }
 </script>

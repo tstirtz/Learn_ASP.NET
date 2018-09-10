@@ -13,7 +13,7 @@
             </tr>
             <tr class="total">
                 <td>Total</td>
-                <td>$ {{ calcTotal( )}}</td>
+                <td>$ {{ total }}</td>
             </tr>
         </table>
     </div>
@@ -24,22 +24,6 @@ export default {
       expenses: {
         type: Array,
       }
-    },
-    methods: {
-      calcTotal(){
-        let total = 0;
-
-        this.expenses.forEach((currentItem, index) => {
-            let cents = currentItem.amount * 100;
-            total += cents;
-        });
-
-        let totalDollars = total / 100;
-        let totalWithCents = totalDollars.toFixed(2);
-
-        return totalWithCents;
-      },
-
     }
   }
 </script>

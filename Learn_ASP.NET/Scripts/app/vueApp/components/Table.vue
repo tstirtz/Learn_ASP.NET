@@ -23,6 +23,9 @@ export default {
     props: {
       expenses: {
         type: Array,
+      },
+      total: {
+        type: String,
       }
     }
   }

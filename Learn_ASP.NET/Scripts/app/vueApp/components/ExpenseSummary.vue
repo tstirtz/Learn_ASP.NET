@@ -1,34 +1,17 @@
 ﻿<template>
-    <div>
-        <button v-on:click="generateChart" class="btn btn-outline-dark">Generate Chart</button>
-        <div id="piechart_3d" style="width: 900px; height: 500px;"></div>
+    <div class="summary-container">
+        <h1 class="display-4 text center view-header">Expense Summary</h1>
+        <div id="piechart_3d"></div>
     </div>
 </template>
 
-<script type="text/javascript" defer>
+<script type="text/javascript">
+import store from "../store";
 
  export default {
-    methods: {
-        generateChart(){
-            google.charts.load("current", {packages:["corechart"]});
-              google.charts.setOnLoadCallback(drawChart);
-              function drawChart() {
-                var data = google.visualization.arrayToDataTable([
-                  ['Task', 'Hours per Day'],
-                  ['Work',     11],
-                  ['Eat',      2],
-                  ['Commute',  2],
-                  ['Watch TV', 2],
-                  ['Sleep',    7]
-                ]);
-
-                var options = {
-                  title: 'My Daily Activities',
-                  is3D: true,
-                };
-                var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
-                    chart.draw(data, options);
-              }
+    data(){
+        return{
+            sharedStore: store.data
         }
     }
  }

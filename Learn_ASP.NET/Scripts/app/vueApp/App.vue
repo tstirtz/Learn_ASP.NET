@@ -3,7 +3,7 @@
         <h1 class="display-4 text center view-header">Expense Tracker</h1>
         <Modal v-bind:modalContent="modal.content" v-bind:modalTitle="modal.title"></Modal>
         <div class="row align-items-center">
-            <form id="expense-form" @submit.prevent="handleSubmit(inputs.expenseName, inputs.expenseAmount, inputs.expenseCateory)" class="input-group">
+            <form id="expense-form" @submit.prevent="handleSubmit(inputs.expenseName, inputs.expenseAmount, inputs.expenseCategory)" class="input-group">
                 <input v-model="inputs.expenseName"
                        placeHolder="Enter expense"
                        type="text" 
@@ -30,7 +30,7 @@
             <Table ></Table>
             <div class="buttons-container">
                 <button v-on:click="clearTable" class="btn btn-outline-dark">Clear Table</button>
-                <router-link class="text-white" to="/summary"><button class="btn btn-dark">Expense Summary</button></router-link>
+                <router-link class="text-white" to="/summary"><button v-on:click="generateChart" class="btn btn-outline-dark">Expense Summary</button></router-link>
             </div>
         </div>
     </div>
@@ -67,6 +67,9 @@ import store from "./store";
       },
       clearTable(){
         store.methods.clearTableAction();
+      },
+      generateChart(){
+        store.methods.generateChart();
       }
   }
  }

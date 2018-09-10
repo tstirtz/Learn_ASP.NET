@@ -19,7 +19,7 @@
             </form>
             <Table v-bind:expenses="expenses" v-bind:total="total"></Table>
             <button v-on:click="clearTable" class="btn btn-outline-dark">Clear Table</button>
-            <router-link to="summary">Expense Summary</router-link>
+            <router-link to="/summary">Expense Summary</router-link>
         </div>
     </div>
 </template>

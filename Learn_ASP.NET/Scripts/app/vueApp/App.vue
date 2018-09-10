@@ -27,7 +27,7 @@
                     <button for="expense-form" class="btn btn-outline-secondary" type="submit">Submit</button>
                 </div>
             </form>
-            <Table ></Table>
+            <Table />
             <div class="buttons-container">
                 <button v-on:click="clearTable" class="btn btn-outline-dark">Clear Table</button>
                 <router-link class="text-white" to="/summary"><button v-on:click="generateChart" class="btn btn-outline-dark">Expense Summary</button></router-link>

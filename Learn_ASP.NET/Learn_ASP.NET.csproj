@@ -123,7 +123,7 @@
     <None Include="Scripts\app\vueApp\components\Table.vue" />
     <None Include="Scripts\app\vueApp\components\Modal.vue" />
     <None Include="Scripts\app\vueApp\components\ExpenseSummary.vue" />
-    <None Include="Scripts\app\vueApp\Home.vue" />
+    <None Include="Scripts\app\vueApp\Router.vue" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

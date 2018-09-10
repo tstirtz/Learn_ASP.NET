@@ -1,6 +1,6 @@
 ﻿import Vue from "vue";
 import App from "./App.vue";
-import Home from "./Home.vue";
+import Router from "./Router.vue";
 import ExpenseSummary from "./components/ExpenseSummary.vue";
 import VueRouter from "vue-router";
 
@@ -19,7 +19,7 @@ const router = new VueRouter({
 
 
 const app = new Vue({
-  components: { Home },
-  template: "<Home/>",
+  components: { Router },
+  template: "<Router/>",
   router
 }).$mount("#app");

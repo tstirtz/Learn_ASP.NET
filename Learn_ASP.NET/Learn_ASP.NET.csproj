@@ -115,6 +115,7 @@
     <Content Include="webpack.config.js" />
     <Content Include="Views\VueApp\Index.cshtml" />
     <Content Include="Scripts\app\vueApp\index.js" />
+    <Content Include="Scripts\app\vueApp\store.js" />
   </ItemGroup>
   <ItemGroup>
     <None Include="package.json" />

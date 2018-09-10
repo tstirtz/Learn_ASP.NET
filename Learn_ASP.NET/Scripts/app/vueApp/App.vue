@@ -27,7 +27,7 @@
                     <button for="expense-form" class="btn btn-outline-secondary" type="submit">Submit</button>
                 </div>
             </form>
-            <Table v-bind:expenses="expenses" v-bind:total="total"></Table>
+            <Table ></Table>
             <div class="buttons-container">
                 <button v-on:click="clearTable" class="btn btn-outline-dark">Clear Table</button>
                 <router-link class="text-white" to="/summary"><button class="btn btn-dark">Expense Summary</button></router-link>
@@ -38,6 +38,7 @@
 <script>
 import Table from "./components/Table.vue";
 import Modal from "./components/Modal.vue";
+import store from "./store";
 
   export default {
     components: {Table, Modal},
@@ -48,18 +49,6 @@ import Modal from "./components/Modal.vue";
           expenseAmount: "",
           expenseCategory: "Category..."
         },
-        expenses:[
-          {
-            name: "Coffee",
-            amount: "3.50",
-            category: "coffee"
-          },
-          {
-            name: "lunch",
-            amount: "8.00",
-            category: "restaurant"
-          }
-        ],
         modal:{
             title: "Vue.js App",
             content: "This expense tracker is a simple Vue.js app incorporated into an ASP.NET MVC application."
@@ -70,31 +59,15 @@ import Modal from "./components/Modal.vue";
       handleSubmit(name, amount, category){
         let amountWithTwoDecimals = ((amount * 100) / 100).toFixed(2);
 
-        this.expenses.push({name, amount: amountWithTwoDecimals, category });
+        store.data.expenses.push({name, amount: amountWithTwoDecimals, category });
 
         this.inputs.expenseName = "";
         this.inputs.expenseAmount = "";
         this.inputs.expenseCategory = "Category...";
       },
       clearTable(){
-        this.expenses = [];
+        store.methods.clearTableAction();
       }
-    },
-    computed: {
-        total: function (){
-        let total = 0;
-
-        this.expenses.forEach((currentItem, index) => {
-            let cents = currentItem.amount * 100;
-            total += cents;
-        });
-
-        let totalDollars = total / 100;
-        let totalWithCents = totalDollars.toFixed(2);
-        console.log(totalWithCents);
-
-        return totalWithCents;
-      },
-    }
   }
+ }
 </script>
